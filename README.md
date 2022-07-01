@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only truthy values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-truthy-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@esm/index.mjs';
+var isTruthyArray = require( '@stdlib/assert-is-truthy-array' );
 ```
 
 #### isTruthyArray( value )
@@ -56,13 +72,8 @@ bool = isTruthyArray( [ '', null, void 0, false, 0, NaN ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@esm/index.mjs';
+```javascript
+var isTruthyArray = require( '@stdlib/assert-is-truthy-array' );
 
 var bool = isTruthyArray( [ [], {}, true, 'a', 5, -5 ] );
 // returns true
@@ -78,10 +89,6 @@ bool = isTruthyArray( true );
 
 bool = isTruthyArray( {} );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -112,7 +119,7 @@ bool = isTruthyArray( {} );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -168,14 +175,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/deno
 [umd-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/umd
 [esm-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-truthy-array/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-truthy-array/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-falsy-array]: https://github.com/stdlib-js/assert-is-falsy-array/tree/esm
+[@stdlib/assert/is-falsy-array]: https://github.com/stdlib-js/assert-is-falsy-array
 
-[@stdlib/assert/is-truthy]: https://github.com/stdlib-js/assert-is-truthy/tree/esm
+[@stdlib/assert/is-truthy]: https://github.com/stdlib-js/assert-is-truthy
 
 <!-- </related-links> -->
 
