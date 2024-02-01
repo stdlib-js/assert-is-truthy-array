@@ -35,38 +35,32 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only truthy values.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-truthy-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isTruthyArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isTruthyArray = require( 'path/to/vendor/umd/assert-is-truthy-array/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isTruthyArray;
-})();
-</script>
+var isTruthyArray = require( '@stdlib/assert-is-truthy-array' );
 ```
 
 #### isTruthyArray( value )
@@ -91,13 +85,8 @@ bool = isTruthyArray( [ '', null, void 0, false, 0, NaN ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isTruthyArray = require( '@stdlib/assert-is-truthy-array' );
 
 var bool = isTruthyArray( [ [], {}, true, 'a', 5, -5 ] );
 // returns true
@@ -113,11 +102,6 @@ bool = isTruthyArray( true );
 
 bool = isTruthyArray( {} );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -202,17 +186,20 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/deno
+[deno-readme]: https://github.com/stdlib-js/assert-is-truthy-array/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/umd
+[umd-readme]: https://github.com/stdlib-js/assert-is-truthy-array/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/assert-is-truthy-array/tree/esm
+[esm-readme]: https://github.com/stdlib-js/assert-is-truthy-array/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/assert-is-truthy-array/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-truthy-array/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-falsy-array]: https://github.com/stdlib-js/assert-is-falsy-array/tree/umd
+[@stdlib/assert/is-falsy-array]: https://github.com/stdlib-js/assert-is-falsy-array
 
-[@stdlib/assert/is-truthy]: https://github.com/stdlib-js/assert-is-truthy/tree/umd
+[@stdlib/assert/is-truthy]: https://github.com/stdlib-js/assert-is-truthy
 
 <!-- </related-links> -->
 
