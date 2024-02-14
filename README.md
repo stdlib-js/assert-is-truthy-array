@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-truthy-array/tags). For example,
+
+```javascript
 import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@v0.2.0-esm/index.mjs';
 ```
 
@@ -73,7 +78,7 @@ bool = isTruthyArray( [ '', null, void 0, false, 0, NaN ] );
 <body>
 <script type="module">
 
-import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@v0.2.0-esm/index.mjs';
+import isTruthyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-truthy-array@esm/index.mjs';
 
 var bool = isTruthyArray( [ [], {}, true, 'a', 5, -5 ] );
 // returns true
